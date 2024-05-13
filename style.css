@@ -573,6 +573,20 @@
     display: flex;
     flex-direction: column;
 }
+.contact-form .form1 .phon{
+    position: absolute;
+    width:70px ;
+    margin-top: 30px;
+    height: 30px;
+    border: none;
+    margin-left: 10px;
+}
+.contact-form .form1 .ph{
+    padding-left: 80px;
+}
+.contact-form .form1 .phon:focus{
+    outline: none;
+}
 .contact-form .form input[type="text"],
 input[type="number"],
 input[type="date"],
@@ -674,6 +688,10 @@ color: var(--white);
     display: flex;
     padding: 15px 0;
     justify-content: space-between;
+}
+.items .item .item-s a{
+    text-decoration: none;
+    color: var(--white);
 }
 /*.items .item .item-s div{
     margin-top: 10px;
