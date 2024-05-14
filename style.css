@@ -30,6 +30,9 @@
     font-family: sans-serif,serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 #header{
     background-color:var(--white);
     height: 90vh;
@@ -69,7 +72,11 @@
     background-color: var(--lightprimary);
     border: 1px solid var(--primary);
     border-radius: 10px;
-    /* color: var(--white); */
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+.Appoinment:hover{
+    background-color: #516eff;
 }
 .navbar div nav ul li.Appoinment  a{
    
@@ -93,6 +100,12 @@
 
 .navbar ul li a:hover{
     color: var(--lightprimary);
+}
+.navbar ul li .active{
+    color: var(--primary);
+    /* font-size: 15px; */
+    font-weight: bold;
+
 }
 
 .header-contents{
@@ -144,13 +157,26 @@
     font-size: 0.7em;
 }
 .btn-bleu{
-    background-color: var(--lightprimary);
+    background-color: var(--primary);
     color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+.btn-bleu:hover{
+    background-color: var(--yellow);
+    color: var(--defaultLinkColor);
 }
 .btn-white{
     background-color: var(--white);
     color: var(--defaultLinkColor);
     font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+.btn-white:hover{
+    background-color: var(--primary);
+    color: var(--white);
 }
 /* section service */
 #services{
@@ -349,6 +375,12 @@
     background-color: var(--primary);
     color: var(--whiteBG);
     border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+#history .smile button:hover{
+    background-color: var(--lightprimary);
+    border: 1px solid var(--lightprimary);
 }
 .historie{
     margin: 70px;
@@ -485,6 +517,12 @@
     color: var(--primary);
     border-radius: 10px;
     margin-top: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+.doctors .doctor button:hover{
+    background-color: var(--primary);
+    color: var(--white);
 }
 
 /* section about */
@@ -607,6 +645,11 @@ select{
     width: 100%;
     padding: 15px;
     border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+.contact-form .form button:hover{
+    background-color: var(--lightprimary);
 }
 
 /* subscribe */
@@ -642,6 +685,12 @@ select{
 .subscribes .subscribe .subscribe-form button{
     padding: 9px 25px;
     border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+.subscribes .subscribe .subscribe-form button:hover{
+    background-color: rgb(97, 151, 165);
+    color: var(--white);
 }
 
 .items{
