@@ -21,7 +21,7 @@
                         <li><a href="#abouts">About us</a></li>
                         <li><a href="#contact">Appointment</a></li>
                         <li><a href="signup.html">Sign up</a></li>
-                        <li class="Appoinment"><a href="login.html" >Login</button></a></li>
+                        <li class="appoinment"><a class="login" href="login.html" >Login</a></li>
                     </ul>
                 </nav>
             </div>
@@ -209,19 +209,19 @@
                         <div class="form">
                             <div class="f1">
                                 <div class="form1">
-                                    <label for="name">Name</label>
-                                    <input type="text" name="name" id="name" placeholder="Full name">
+                                    <label for="nom">Name</label>
+                                    <input type="text" name="nom" id="nom" placeholder="Full name" required>
                                 </div>
                                 <div class="form1">
                                     <label for="date">Date</label>
-                                    <input type="date" name="date" id="date">
+                                    <input type="date" name="date" id="date" required>
                                 </div>
                                 
                             </div>
                             <div>
                                 <div class="form1">
                                     <label for="Phone">Phone</label>
-                                    <input type="number" name="Phone" class="ph" id="Phone" placeholder="(555) 000-000">
+                                    <input type="number" name="Phone" class="ph" id="Phone" placeholder="(555) 000-000" maxlength="8" required>
                                     <select name="phon" class="phon" id="phon">
                                         <option value="phon">+01</option>
                                         <option value="phon">+02</option>
@@ -230,7 +230,7 @@
                                 </div>
                                 <div class="form1">
                                     <label for="Phone">Doctor</label>
-                                    <select name="Phone" id="Phone">
+                                    <select name="Phone" id="Phone" required>
                                         <option value="name">Dr. Pretis Barua</option>
                                         <option value="name">Dr. Jeanatte Hoff</option>
                                         <option value="name">Dr. David Ambrose</option>
@@ -241,7 +241,7 @@
                         </div>
                         <div class="form form1">
                             <label for="message">Message</label>
-                            <textarea name="message" id="message" placeholder="include a message..."></textarea>
+                            <textarea name="message" id="message" placeholder="include a message..." required></textarea>
                         </div>
                         <div class="form">
                             <input type="checkbox" name="name" id="name"> You agree to our friendly privacy policy
